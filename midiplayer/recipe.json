@@ -1,0 +1,48 @@
+{
+  "about": "MIDI Player 1.3: piano roll, keyboard, marquee song title, single transport icon and clock",
+  "name": "midiplayer",
+  "version": 14,
+  "interface": 1,
+  "build": "build_midiplayer_10",
+  "sources": [
+    "midiplayer/midiplayer.cpp",
+    "midiplayer/midi_core.cpp",
+    "midiplayer/midiplayer_card.s"
+  ],
+  "works_with": [],
+  "serves": [],
+  "exports": [],
+  "pictures": [],
+  "card": {
+    "level": 5,
+    "frame": "midiplayer_frame",
+    "pick": null,
+    "pictures": false,
+    "input": "midiplayer_input",
+    "folders": [
+      {
+        "name": "midiplayer",
+        "place": "midiplayer",
+        "shown": true
+      }
+    ],
+    "asks": [
+      {
+        "kind": "sequencer",
+        "name": "midiplayer",
+        "synth_only": true,
+        "all_midi": false,
+        "shown": "midiplayer_shown",
+        "tick": "midiplayer_tick",
+        "key": null,
+        "run": "midiplayer_run",
+        "octave": null,
+        "playing": null
+      }
+    ]
+  },
+  "marks": [],
+  "named": true,
+  "sum": true,
+  "path": null
+}
